@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    /* colors */
+    --primary-bg: #666093;
+    --secondary-bg: #fff;
+    --primary-fg: #fff;
+    --secondary-fg: #909090;
+    --link-color: #9a6aa6;
+
+    /* font options */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--primary-bg);
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-styling {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-bg);
+    padding: 3em 2em;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    flex: 1;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.form-heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+.form-subheading {
+    font-size: 0.9rem;
+    color: var(--link-color);
+    cursor: pointer;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-input {
+    padding: 1em;
+    border: 1px solid var(--secondary-fg);
+    border-radius: 10px;
+    margin-bottom: 0.5em;
+}
+
+.form-button {
+    background-color: var(--primary-bg);
+    color: var(--primary-fg);
+    padding: 1em;
+    border-style: none;
+    border-radius: 10px;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+.form-question {
+    display: flex;
+    align-items: center;
+}
+
+.form-checkbox {
+    margin-right: 0.5em;
+}
+
+.form-checkbox-label {
+    font-size: 1rem;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 4em;
+}
+
+.copyleft {
+    font-size: 0.8rem;
+    color: var(--secondary-fg);
+    margin-top: 1em;
+}
+
+.copyleft-symbol {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 50%;
+}
+
+.form-image {
+    /* 
+     * Image Author: Dids
+     * Image URL: https://www.pexels.com/photo/purple-and-white-anstract-painting-3029545/
+     */
+    background-image: url('purple.jpg');
+    background-size: cover;
+    flex: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@media screen and (max-width: 576px) {
+    .form-container {
+        width: 80%;
+    }
+
+    .form-image: {
+        flex: 1;
+    }
+
+    .form-styling {
+        flex: 3;
+    }
+}

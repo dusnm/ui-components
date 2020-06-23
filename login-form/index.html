@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form action="#" method="POST" class="form-styling" id="login-form">
+                <div class="form-header">
+                    <h1 class="form-heading">Login</h1>
+                    <h2 class="form-subheading">Create an account</h2>
+                </div>
+                
+                <label class="form-label" for="email">Email</label>
+                <input 
+                    type="email" 
+                    class="form-input" 
+                    id="email" 
+                    placeholder="Enter your email" 
+                    required
+                >
+                
+                <label class="form-label" for="password">Password</label>
+                <input
+                    type="password"
+                    class="form-input"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button class="form-button" type="submit">Log In</button>
+
+                <div class="form-question">
+                    <input type="checkbox" class="form-checkbox" id="checkbox">
+                    <label for="checkbox" class="form-checkbox-label">Keep me logged in</label>
+                </div>
+
+                <div class="form-footer">
+                    <h2 class="form-subheading">Forgot your password?</h2>
+                    <p class="copyleft">
+                        <span class="copyleft-symbol">&copy;</span> 
+                        2020 All rights reversed
+                    </p>
+                </div>
+            </form>
+            <div class="form-image"></div>
+        </div>
+    </div>
+</body>
+</html>
